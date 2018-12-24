@@ -141,3 +141,11 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Enable SAP + SAP Feature.
 QC_WIFI_HIDL_FEATURE_DUAL_AP := true
+
+# Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    vendor.display.config@1.0
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
