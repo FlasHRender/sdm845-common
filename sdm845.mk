@@ -22,10 +22,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# Ambient Display
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -42,6 +38,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 		frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
     frameworks/native/data/etc/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml
+
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Display
 PRODUCT_PACKAGES += \
